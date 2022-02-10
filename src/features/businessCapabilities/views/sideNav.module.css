@@ -1,0 +1,44 @@
+.treeWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-basis: 60%;
+}
+ul {
+    list-style-type: none;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+}
+
+.leaf {
+    cursor: pointer;
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "\25B6";
+    color: white;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caretDown::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}

@@ -1,0 +1,6 @@
+.cardContainer {
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
